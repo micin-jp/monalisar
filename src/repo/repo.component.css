@@ -15,3 +15,27 @@
 .github-repos > div:nth-child(3n+1) {
   margin-right: 2%;
 }
+
+@media screen and (max-width: 667px) {
+  .github-repos > div {
+    flex-basis: 48.5%;
+  }
+  .github-repos > div:nth-child(3n) {
+    margin-left: 0;
+  }
+  .github-repos > div:nth-child(3n+1) {
+    margin-right: 0;
+  }
+  .github-repos > div:nth-child(2n) {
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .github-repos > div {
+    flex-basis: 100%;
+  }
+  .github-repos > div:nth-child(2n) {
+    margin-left: 0;
+  }
+}
