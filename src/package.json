@@ -1,0 +1,31 @@
+{
+  "name": "monalisar",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micin-jp/monalisar"
+  },
+  "author": {
+    "name": "MICIN, INC."
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micin-jp/monalisar/issues"
+  },
+  "main": "monalisar.umd.js",
+  "module": "monalisar.js",
+  "jsnext:main": "monalisar.js",
+  "typings": "monalisar.d.ts",
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "sanitize-html": "^1.14.1"
+  },
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

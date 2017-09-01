@@ -1,0 +1,17 @@
+.github-repos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.github-repos > div {
+  flex-basis: 32%;
+  border: solid 1px #d1d5da;
+  border-radius: 2px;
+  margin: 0 0 1em 0;
+  padding: 1em;
+}
+.github-repos > div:nth-child(3n) {
+  margin-left: 2%;
+}
+.github-repos > div:nth-child(3n+1) {
+  margin-right: 2%;
+}

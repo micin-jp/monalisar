@@ -1,0 +1,7 @@
+.github-repo > div {
+  width: 100%;
+  border: solid 1px #d1d5da;
+  border-radius: 2px;
+  margin: 0 0 1em 0;
+  padding: 1em;
+}

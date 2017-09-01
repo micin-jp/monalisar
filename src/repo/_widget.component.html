@@ -1,0 +1,28 @@
+<div class="github-repo-widget">
+  <div class="github-repo-widget-name">
+    <a [attr.href]="repo.url" target="_blank">
+      {{repo.name}}
+    </a>
+  </div>
+  <div class="github-repo-widget-desc"
+       [innerHtml]="repo.desc | escape | linkify">
+  </div>
+
+  <div class="github-repo-widget-summary">
+    <div class="github-repo-widget-lang">
+      <ng-container *ngIf="repo.lang; else noLang">
+        <i [style.background]="getColor(repo.lang)"></i>
+        <span>{{repo.lang}}</span>
+      </ng-container>
+      <ng-template #noLang>(No language)</ng-template>
+    </div>
+    <div class="github-repo-widget-octicon">
+      <star-icon></star-icon>
+      <span>{{repo.stars}}</span>
+    </div>
+    <div class="github-repo-widget-octicon">
+      <fork-icon></fork-icon>
+      <span>{{repo.forks}}</span>
+    </div>
+  </div>
+</div>
