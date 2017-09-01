@@ -1,9 +1,3 @@
-a {
-  color: #0366d6;
-}
-a:hover {
-  text-decoration: underline;
-}
 .github-repo-widget {
   font-size: inherit;
   line-height: 1;
@@ -12,6 +6,14 @@ a:hover {
 .github-repo-widget-name {
   margin: 0 0 1em 0;
   font-weight: bold;
+}
+.github-repo-widget-name a,
+.github-repo-widget-desc a {
+  color: #0366d6;
+}
+.github-repo-widget-name a:hover,
+.github-repo-widget-desc a:hover {
+  text-decoration: underline;
 }
 .github-repo-widget-desc {
   font-size: 70%;
